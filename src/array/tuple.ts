@@ -1,4 +1,4 @@
-export default function tupleSample(): void {
+export default function tupleSample (): void {
   // 一般的なタプル定義
   const response: [number, string] = [200, 'OK']
   // response = [400, "Bud Request", "Email parameter is missing"]

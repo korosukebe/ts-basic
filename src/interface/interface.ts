@@ -8,7 +8,7 @@ interface Bread {
 
 const francePan: Bread = {
   calories: 300,
-  type: 'hard',
+  type: 'hard'
 }
 console.log(francePan)
 
@@ -28,7 +28,7 @@ type MaboDon = MaboDofu & Rice // 交差型(intersection)
 const maboDon: MaboDon = {
   calories: 500,
   spicyLevel: 10,
-  gram: 350,
+  gram: 350
 }
 console.log(maboDon)
 
@@ -44,7 +44,7 @@ interface Magazine extends Book {
 const jump: Magazine = {
   page: 300,
   title: '週間少年ジャンプ',
-  cycle: 'weekly',
+  cycle: 'weekly'
 }
 console.log(jump)
 
@@ -60,7 +60,7 @@ interface Handbook extends BookType {
 const cotrip: Handbook = {
   page: 120,
   title: 'ことりっぷ',
-  theme: '旅行',
+  theme: '旅行'
 }
 console.log(cotrip)
 
@@ -68,16 +68,16 @@ class Comic implements Book {
   page: number
   title: string
 
-  constructor(
+  constructor (
     page: number,
     title: string,
-    private readonly publishYear: string,
+    private readonly publishYear: string
   ) {
     this.page = page
     this.title = title
   }
 
-  getPublishYear(): string {
+  getPublishYear (): string {
     return this.title + 'が発売されたのは' + this.publishYear + '年です。'
   }
 }

@@ -1,4 +1,4 @@
-export default function genericsAdvancedSample(): void {
+export default function genericsAdvancedSample (): void {
   // map関数のシグネチャ
   type Map<T, U> = (array: T[], fn: (item: T) => U) => U[]
 

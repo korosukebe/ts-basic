@@ -4,7 +4,7 @@ export const logMessage = (message: string): void => {
 }
 
 // 名前付き関数
-export function logMessage2(message: string): void {
+export function logMessage2 (message: string): void {
   console.log('Function basic sample 2:', message)
 }
 
