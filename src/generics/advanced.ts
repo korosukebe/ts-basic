@@ -1,4 +1,4 @@
-export default function genericsAdvancedSample(): void {
+export default function genericsAdvancedSample (): void {
   // map関数のシグネチャ
   type Map<T, U> = (array: T[], fn: (item: T) => U) => U[]
 
@@ -10,8 +10,8 @@ export default function genericsAdvancedSample(): void {
     }
     return result
   }
-  const numbers = mapStringsToNumbers(["123", "456", "789"], (item) => Number(item))
-  console.log("Generics advanced sample 1:", numbers)
+  const numbers = mapStringsToNumbers(['123', '456', '789'], (item) => Number(item))
+  console.log('Generics advanced sample 1:', numbers)
 
   const mapNumbersToStrings: Map<number, string> = (array, fn) => {
     const result = []
@@ -22,6 +22,5 @@ export default function genericsAdvancedSample(): void {
     return result
   }
   const strings = mapNumbersToStrings(numbers, (item) => String(item))
-  console.log("Generics advanced sample 2:", strings)
-
+  console.log('Generics advanced sample 2:', strings)
 }

@@ -38,4 +38,3 @@ import genericsAdvancedSample from './generics/advanced'
 
 genericsBasicSample()
 genericsAdvancedSample()
-

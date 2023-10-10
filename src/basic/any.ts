@@ -1,4 +1,4 @@
-export default function anySample(): void {
+export default function anySample (): void {
   let name: any = 'Torahack'
   console.log('any sample 1:', typeof name, name)
 

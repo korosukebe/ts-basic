@@ -1,4 +1,4 @@
-export default function notExistSample(): void {
+export default function notExistSample (): void {
   let name = null
   console.log('notExist sample 1:', typeof name, name)
 
