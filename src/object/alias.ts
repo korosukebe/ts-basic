@@ -1,4 +1,4 @@
-export default function typeAliasSample (): void {
+export default function typeAliasSample(): void {
   // 型エイリアス
   interface Country {
     capitali: string
@@ -9,14 +9,14 @@ export default function typeAliasSample (): void {
   const japan: Country = {
     capitali: 'Tokyo',
     language: 'Japanese',
-    name: 'Japan'
+    name: 'Japan',
   }
   console.log('Object alias sample 1:', japan)
 
   const america: Country = {
     capitali: 'Washington, D.C',
     language: 'English',
-    name: 'United States of America'
+    name: 'United States of America',
   }
   console.log('Object alias sample 2:', america)
 
@@ -44,14 +44,14 @@ export default function typeAliasSample (): void {
     hp: 100,
     sp: 30,
     weapon: '木の剣',
-    swordSkill: '三連斬り'
+    swordSkill: '三連斬り',
   }
 
   const adventure2: Adventurer = {
     hp: 100,
     mp: 30,
     weapon: '木の杖',
-    magicSkill: 'ファイヤボール'
+    magicSkill: 'ファイヤボール',
   }
   console.log('Object alias sample 3:', adventure1)
   console.log('Object alias sample 4:', adventure2)
@@ -62,7 +62,7 @@ export default function typeAliasSample (): void {
     mp: 100,
     weapon: '銀の剣',
     swordSkill: '三連斬り',
-    magicSkill: 'ファイヤボール'
+    magicSkill: 'ファイヤボール',
   }
   console.log('Object alias sample 5:', paladin)
 }

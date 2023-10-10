@@ -1,7 +1,7 @@
-export default function objectSample (): void {
+export default function objectSample(): void {
   const a: object = {
     name: 'Torahack',
-    age: 28
+    age: 28,
   }
   // xxx console.log(a.name)
   console.log(a)
@@ -12,14 +12,14 @@ export default function objectSample (): void {
     name: string
   } = {
     language: 'Japanese',
-    name: 'Japan'
+    name: 'Japan',
   }
   console.log(country.name)
   console.log('Object object sample 1:', country)
 
   country = {
     language: 'English',
-    name: 'United States of America'
+    name: 'United States of America',
   }
   console.log('Object object sample 2:', country)
 
@@ -32,7 +32,7 @@ export default function objectSample (): void {
   } = {
     age: 28,
     lastName: 'Yamada',
-    firstName: 'Tarou'
+    firstName: 'Tarou',
   }
 
   torahack.gender = 'male'
@@ -43,7 +43,7 @@ export default function objectSample (): void {
   // インデックスシグネチャ
   const capitals: Record<string, string> = {
     Japan: 'Tokyo',
-    Korea: 'Seoul'
+    Korea: 'Seoul',
   }
   capitals.China = 'Beijing'
   capitals.Canada = 'Ottawa'

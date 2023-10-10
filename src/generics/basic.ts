@@ -1,4 +1,4 @@
-export default function genericsBasicSample (): void {
+export default function genericsBasicSample(): void {
   // ジェネリック型を使わない場合
   const stringReduce = (array: string[], initialValue: string): string => {
     let result = initialValue
@@ -43,8 +43,33 @@ export default function genericsBasicSample (): void {
     <T>(array: T[], initialValue: T): T
     <U>(array: U[], initialValue: U): U
   }
+  const genericReduce2: GenericReduce2 = (array: string[], initialValue: string): string => {
+    let result = initialValue
+    for (let i = 0; i < array.length; i++) {
+      result += array[i]
+    }
+    return result
+  }
+  console.log('GenericReduce2:', genericReduce2(['a ', 'b ', 'c ', 'd'], ''))
 
   // 呼び出しシグネチャの省略記法
-type GeneicReduce3<T> = (array: T[], initialValue: T) => T
-type GenericReduce4 = <T>(array: T[], initialValue: T) => T
+  type GenericReduce3<T> = (array: T[], initialValue: T) => T
+  const genericReduce3: GenericReduce3<string> = (array, initialValue) => {
+    let result = initialValue
+    for (let i = 0; i < array.length; i++) {
+      result += array[i]
+    }
+    return result
+  }
+  console.log('GenericReduce3:', genericReduce3(['a ', 'b ', 'c ', 'd'], ''))
+
+  type GenericReduce4<T> = (array: T[], initialValue: T) => T
+  const genericReduce4: GenericReduce4<string> = (array: string[], initialValue: string): string => {
+    let result = initialValue
+    for (let i = 0; i < array.length; i++) {
+      result += array[i]
+    }
+    return result
+  }
+  console.log('GenericReduce4:', genericReduce4(['a ', 'b ', 'c ', 'd'], ''))
 }

@@ -1,4 +1,4 @@
-export default function arraySample (): void {
+export default function arraySample(): void {
   // シンプルな配列の型定義
   const colors: string[] = ['red', 'blue']
   colors.push('yellow')
