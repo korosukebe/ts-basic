@@ -4,7 +4,6 @@
 // const world = new World('Hello World!')
 // world.sayHello(root)
 
-
 // import {unknownSample, anySample, notExistSample, primitiveSample} from './basic'
 //
 // primitiveSample()
@@ -12,13 +11,18 @@
 // anySample()
 // unknownSample()
 
-import {logMessage} from './function/basic'
-import {isUserSignedIn, isUserSignedIn2, sumProductsPrice} from './function/parameters'
+// import { logMessage } from './function/basic'
+// import { isUserSignedIn, isUserSignedIn2, sumProductsPrice } from './function/parameters'
+//
+// logMessage('Hello TYpeScript')
+// isUserSignedIn('ABC', 'Torahack')
+// isUserSignedIn('DEF')
+// isUserSignedIn2('ABC')
+// const sum = sumProductsPrice(100, 200, 300, 400, 500)
+// console.log('Function parameters sample 5:', sum)
 
-logMessage('Hello TYpeScript')
-isUserSignedIn('ABC', 'Torahack')
-isUserSignedIn('DEF')
-isUserSignedIn2('ABC')
-const sum = sumProductsPrice(100, 200, 300, 400, 500)
-console.log('Function parameters sample 5:', sum)
+import objectSample from './object/object'
+import typeAliasSample from './object/alias'
 
+objectSample()
+typeAliasSample()
